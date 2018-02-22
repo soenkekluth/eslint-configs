@@ -1,4 +1,4 @@
-# eslint-config-kluth
+# eslint-config-sk-node
 
 [ESLint](http://eslint.org) config using [Prettier](https://github.com/prettier/prettier) for code formatting and unification.
 
@@ -6,7 +6,7 @@
 
 ### [Yarn](https://yarnpkg.com)
 
-`yarn add eslint-config-kluth -D -E`
+`yarn add eslint-config-sk-node -D -E`
 
 #### Add peer dependencies
 

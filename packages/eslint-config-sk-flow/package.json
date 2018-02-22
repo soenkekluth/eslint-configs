@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-sk-flow",
+  "version": "0.1.7",
+  "main": "index.js",
+  "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint-config-sk-common": ">=0.1.7"
+  },
+  "dependencies": {
+    "eslint-config-sk-common":">=0.1.7"
+  }
+}

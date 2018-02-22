@@ -13,7 +13,7 @@
     "es6": true
   },
   "parser": "babel-eslint",
-  "plugins": ["compat", "prettier"],
+  "plugins": ["compat", "prettier", "sort-class-members"],
   "rules": {
     "sort-class-members/sort-class-members": [
       2,

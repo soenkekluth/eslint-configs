@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "base eslint config using prettier",
   "keywords": [
     "javascript",

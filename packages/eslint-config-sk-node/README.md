@@ -29,3 +29,5 @@
 ```
 * Run `yarn lint` to lint your code.
 * Run `yarn lint:fix` to lint, format and fix your code.
+
+yarn add sort-class-members-codemod -D -E

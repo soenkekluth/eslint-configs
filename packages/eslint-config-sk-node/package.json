@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "base eslint node config using prettier",
   "keywords": [
     "javascript",
@@ -11,7 +11,7 @@
     "prettier"
   ],
   "main": "index.js",
-  "repository": "git@github.com:soenkekluth/eslint-config-sk-node.git",
+  "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
   "peerDependencies": {

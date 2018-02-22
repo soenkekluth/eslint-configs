@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-node",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "base eslint node config using prettier",
   "keywords": [
     "javascript",
@@ -10,7 +10,7 @@
     "config",
     "prettier"
   ],
-  "main": "index.js",
+  "main": "index.json",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "eslint-plugin-prettier": ">= 2.6.0",
     "prettier": ">= 1.10.2"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.1",
     "eslint-config-prettier": "^2.9.0",

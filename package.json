@@ -1,10 +1,17 @@
 {
-  "private": true,
-  "repository": "git@github.com:soenkekluth/eslint-configs.git",
-  "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
-  "license": "MIT",
-  "workspaces": ["packages/*"],
-  "dependencies": {
-    "lerna": "^2.9.0"
-  }
+    "private": true,
+    "repository": "git@github.com:soenkekluth/eslint-configs.git",
+    "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
+    "license": "MIT",
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "lerna": "^2.9.0"
+    },
+    "scripts": {
+        "bootstrap": "lerna bootstrap",
+        "test": "lerna run test",
+        "prepare": "lerna run prepare"
+    }
 }

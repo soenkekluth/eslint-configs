@@ -17,7 +17,7 @@
 * Create `.eslintrc.js` configuration file:
   ```js
   module.exports = {
-    extends: ['last'],
+    extends: ['sk'],
   };
   ```
 * Add lint scripts to `package.json`:

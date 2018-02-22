@@ -8,6 +8,13 @@ module.exports = {
     ecmaVersion: 8,
     sourceType: 'module', // es6 import/export
   },
+  globals: {
+    expect: true,
+  },
+  env: {
+    node: true,
+    es6: true,
+  },
   // parser: 'babel-eslint', // class properties
   plugins: ['node', 'prettier'],
   rules: {

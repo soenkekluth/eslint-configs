@@ -1,17 +1,21 @@
 {
-    "private": true,
-    "repository": "git@github.com:soenkekluth/eslint-configs.git",
-    "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
-    "license": "MIT",
-    "workspaces": [
-        "packages/*"
-    ],
-    "dependencies": {
-        "lerna": "^2.9.0"
-    },
-    "scripts": {
-        "bootstrap": "lerna bootstrap",
-        "test": "lerna run test",
-        "prepare": "lerna run prepare"
-    }
+  "private": true,
+  "repository": "git@github.com:soenkekluth/eslint-configs.git",
+  "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "lerna": "^2.9.0",
+    "yalc": "^1.0.0-pre.17"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "update:links": "yalc update",
+    "test": "lerna run test",
+    "yalc:link": "yalc link eslint-config-sk-common",
+    "prepare": "lerna run prepare"
+  },
+  "devDependencies": {}
 }

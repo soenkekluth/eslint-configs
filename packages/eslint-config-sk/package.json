@@ -16,20 +16,20 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.18.2",
-    "eslint-config-sk-common": ">=0.1.10"
+    "eslint-config-sk-node": ">=0.1.11"
   },
   "devDependencies": {
     "eslint": "^4.18.2"
   },
   "dependencies": {
     "eslint": "^4.18.2",
-    "eslint-config-sk-common": "^0.1.11"
+    "eslint-config-sk-node": "^0.1.11"
   },
   "engines": {
-    "node": ">=8.x"
+    "node": ">=9.x"
   },
   "devEngines": {
-    "node": ">=8.x"
+    "node": ">=9.x"
   },
   "scripts": {
     "publish:local": "yalc publish",

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["sk-node"],
+  extends: ["sk-common"],
   globals: {
     browser: true
   },

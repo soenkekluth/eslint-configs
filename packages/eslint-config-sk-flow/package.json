@@ -8,7 +8,11 @@
     "test": "exit 0",
     "publish:local": "yalc publish"
   },
+  "peerDependencies": {
+    "eslint": ">=4.18.2",
+    "eslint-config-sk-common": ">=0.1.11"
+  },
   "dependencies": {
-    "eslint-config-sk-common": "file:.yalc/eslint-config-sk-common"
+    "eslint-config-sk-common": "^0.1.11"
   }
 }

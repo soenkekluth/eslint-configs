@@ -1,22 +1,27 @@
 module.exports = {
-  extends: ["eslint:recommended", "prettier"],
+  extends: ["eslint:recommended", "plugin:jest/recommended", "prettier"],
   parserOptions: {
     ecmaVersion: 8,
-    sourceType: "module"
+    sourceType: "module",
+    ecmaFeatures: {
+      modules: true,
+      impliedStrict: true,
+      experimentalObjectRestSpread: true,
+      experimentalDecorators: true,
+      jsx: true
+    }
   },
   globals: {
     expect: true,
-    assert: true
+    global: true
   },
   env: {
     es6: true,
     node: true,
-    browser: true,
-    commonjs: true
+    "jest/globals": true
   },
   parser: "babel-eslint",
-  plugins: ["compat", "prettier", "sort-class-members"],
-
+  plugins: ["compat", "prettier", "jest", "sort-class-members"],
   rules: {
     "sort-class-members/sort-class-members": [
       2,
@@ -53,14 +58,11 @@ module.exports = {
         useTabs: false
       }
     ],
-    "class-methods-use-this":"off",
-    "no-unused-expressions":"warn",
-    "no-mixed-operators":"warn",
-    "no-plusplus":"off",
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
+    "class-methods-use-this": "off",
+    "no-unused-expressions": "warn",
+    "no-mixed-operators": "warn",
+    "no-plusplus": "off",
+    "linebreak-style": ["error", "unix"],
     "import/resolver": {
       node: {
         // This adds ./src for relative imports.

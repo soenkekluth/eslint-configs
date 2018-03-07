@@ -1958,7 +1958,7 @@ eslint-config-prettier@^2.9.0:
     prettier "^1.10.2"
     sort-class-members-codemod "0.5.1"
 
-eslint-plugin-compat@2.2.0:
+eslint-plugin-compat@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/eslint-plugin-compat/-/eslint-plugin-compat-2.2.0.tgz#d612a9988d9fba66bcd8e86fcc1b551753aac995"
   dependencies:

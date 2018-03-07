@@ -10,7 +10,7 @@
   },
   "peerDependencies": {
     "eslint": ">=4.18.2",
-    "eslint-config-sk-common": ">=0.1.11"
+    "eslint-config-sk-common": ">=0.3.0"
   },
   "dependencies": {
     "eslint-config-sk-common": "^0.3.0"

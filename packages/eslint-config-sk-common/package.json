@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
+  "engines": {
+    "node": ">=8.3.0"
+  },
   "scripts": {
     "test": "node test/test.js",
     "publish:local": "yalc publish"

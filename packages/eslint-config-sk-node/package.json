@@ -26,10 +26,10 @@
     "eslint-plugin-node": "^6.0.1"
   },
   "engines": {
-    "node": ">=9.x"
+    "node": ">=9.0.0"
   },
   "devEngines": {
-    "node": ">=9.x"
+     "node": ">=9.0.0"
   },
   "scripts": {
     "test": "node test/test.js",

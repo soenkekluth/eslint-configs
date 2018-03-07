@@ -1,7 +1,7 @@
 module.exports = {
   extends: ["eslint:recommended", "plugin:jest/recommended", "prettier"],
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2018,
     sourceType: "module",
     ecmaFeatures: {
       modules: true,

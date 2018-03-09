@@ -21,7 +21,7 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.18.2",
-    "eslint-config-sk-node": ">=0.3.2"
+    "eslint-config-sk-node": ">=0.4.0"
   },
   "devDependencies": {
     "eslint": "^4.18.2"

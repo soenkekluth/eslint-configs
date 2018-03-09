@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:jest/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:jest/recommended',
+    'prettier',
+  ],
   parserOptions: {
     ecmaVersion: 7,
     sourceType: 'module',
@@ -21,7 +27,7 @@ module.exports = {
     'jest/globals': true,
   },
   parser: 'babel-eslint',
-  plugins: ['compat', 'prettier', 'jest', 'sort-class-members'],
+  plugins: ['import', 'compat', 'prettier', 'jest', 'sort-class-members'],
   rules: {
     'compat/compat': 'error',
     'sort-class-members/sort-class-members': [
@@ -66,8 +72,9 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'import/resolver': {
       node: {
+        extensions: ['.js', '.json', '.jsx'],
         // This adds ./src for relative imports.
-        moduleDirectory: ['node_modules', 'src'],
+        // moduleDirectory: ['node_modules', 'src'],
       },
     },
   },

@@ -13,12 +13,13 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "update:links": "yalc update",
-    "format":"prettier './**/*.js' --write",
+    "format": "prettier './**/*.js' --write",
     "test": "lerna run test",
     "yalc:link": "yalc link eslint-config-sk-common",
     "prepare": "lerna run prepare"
   },
   "devDependencies": {
+    "eslint": "^4.18.2",
     "prettier": "^1.11.1"
   }
 }

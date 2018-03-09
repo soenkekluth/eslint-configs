@@ -4,6 +4,20 @@
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
+  "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "es6",
+    "prettify",
+    "eslint",
+    "lint",
+    "lint-config",
+    "config",
+    "jest",
+    "no-config",
+    "prettier"
+  ],
   "scripts": {
     "test": "exit 0",
     "publish:local": "yalc publish"

@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-sk-common",
-    "version": "0.5.0",
+    "version": "0.5.6",
     "main": "index.js",
     "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
     "license": "MIT",

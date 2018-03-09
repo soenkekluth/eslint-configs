@@ -1,4 +1,4 @@
-# eslint-config-sk-browser
+# eslint-config-sk-common
 
 [ESLint](http://eslint.org) config using [Prettier](https://github.com/prettier/prettier) and [sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members) for code formatting and unification. [jest](https://www.npmjs.com/package/eslint-plugin-jest) for testing.
 
@@ -7,10 +7,10 @@
 
 ### [yarn](https://yarnpkg.com)
 
-`yarn add eslint eslint-config-sk-browser -D -E`
+`yarn add eslint eslint-config-sk-common -D -E`
 
 ### [npm](https://npmjs.com)
-`npm i -D eslint eslint-config-sk-browser`
+`npm i -D eslint eslint-config-sk-common`
 
 ## Usage
 
@@ -20,7 +20,7 @@
 
 ```js
 module.exports = {
-  extends: ["sk-browser"]
+  extends: ["sk-common"]
 };
 ```
 
@@ -28,20 +28,20 @@ module.exports = {
 
 ```json
 {
-  "extends": ["sk-browser"]
+  "extends": ["sk-common"]
 }
 ```
 
 `.eslintrc`
 
 ```json
-  extends: 'sk-browser'
+  extends: 'sk-common'
 ```
 
 `.eslintrc.yml`
 
 ```json
-  extends: 'sk-browser'
+  extends: 'sk-common'
 ```
 
 ### Add lint scripts

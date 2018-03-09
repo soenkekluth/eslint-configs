@@ -5,9 +5,14 @@
   "keywords": [
     "javascript",
     "ecmascript",
+    "es6",
+    "prettify",
     "eslint",
     "lint",
+    "lint-config",
     "config",
+    "jest",
+    "no-config",
     "prettier"
   ],
   "main": "index.js",

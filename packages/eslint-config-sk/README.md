@@ -1,31 +1,61 @@
 # eslint-config-sk
 
-[ESLint](http://eslint.org) config using [Prettier](https://github.com/prettier/prettier) for code formatting and unification.
+[ESLint](http://eslint.org) config using [Prettier](https://github.com/prettier/prettier) and [sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members) for code formatting and unification. [jest](https://www.npmjs.com/package/eslint-plugin-jest) for testing.
+
 
 ## Install
 
-### [Yarn](https://yarnpkg.com)
+### [yarn](https://yarnpkg.com)
 
-`yarn add eslint-config-sk -D -E`
+`yarn add eslint eslint-config-sk -D -E`
 
-#### Add peer dependencies
-
-`yarn add eslint babel-eslint prettier eslint-config-prettier eslint-plugin-prettier -D -E`.
+### [npm](https://npmjs.com)
+`npm i -D eslint eslint-config-sk`
 
 ## Usage
 
-* Create `.eslintrc.js` configuration file:
-  ```js
-  module.exports = {
-    extends: ['sk'],
-  };
-  ```
-* Add lint scripts to `package.json`:
-  ```json
-  "scripts": {
-    "lint": "yarn eslint .",
-    "lint:fix": "yarn lint --fix"
-  }
+### create a eslint config file type of your choice
+
+`.eslintrc.js`
+
+```js
+module.exports = {
+  extends: ["sk"]
+};
 ```
+
+`.eslintrc.json`
+
+```json
+{
+  "extends": ["sk"]
+}
+```
+
+`.eslintrc`
+
+```json
+  extends: 'sk'
+```
+
+`.eslintrc.yml`
+
+```json
+  extends: 'sk'
+```
+
+### Add lint scripts
+
+Add scripts to `package.json`:
+
+```json
+"scripts": {
+  "lint": "yarn eslint .",
+  "lint:fix": "yarn lint --fix"
+}
+```
+
+### Lint manually
+
 * Run `yarn lint` to lint your code.
 * Run `yarn lint:fix` to lint, format and fix your code.

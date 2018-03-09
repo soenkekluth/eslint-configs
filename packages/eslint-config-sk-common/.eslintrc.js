@@ -23,6 +23,7 @@ module.exports = {
   parser: "babel-eslint",
   plugins: ["compat", "prettier", "jest", "sort-class-members"],
   rules: {
+    "compat/compat": "error",
     "sort-class-members/sort-class-members": [
       2,
       {

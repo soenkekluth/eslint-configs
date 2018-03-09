@@ -1,45 +1,42 @@
 {
-  "name": "eslint-config-sk",
-  "version": "0.4.1",
-  "description": "base eslint config using prettier",
-  "keywords": [
-    "javascript",
-    "ecmascript",
-    "es6",
-    "prettify",
-    "eslint",
-    "lint",
-    "lint-config",
-    "config",
-    "jest",
-    "no-config",
-    "prettier"
-  ],
-  "main": "index.js",
-  "repository": "git@github.com:soenkekluth/eslint-configs.git",
-  "author": "Sönke Kluth <mail@soenkekluth.com>",
-  "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">=4.18.2",
-    "eslint-config-sk-node": ">=0.4.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.18.2"
-  },
-  "dependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-sk-node": "^0.4.1"
-  },
-  "engines": {
-    "node": ">=9.0.0"
-  },
-  "devEngines": {
-    "node": ">=9.0.0"
-  },
-  "scripts": {
-    "publish:local": "yalc publish",
-    "test": "node test/test.js",
-    "lint": "yarn eslint .",
-    "lint:fix": "yarn lint --fix"
-  }
+    "name": "eslint-config-sk",
+    "version": "0.4.1",
+    "description": "base eslint config using prettier",
+    "keywords": [
+        "javascript",
+        "ecmascript",
+        "es6",
+        "prettify",
+        "eslint",
+        "lint",
+        "lint-config",
+        "config",
+        "jest",
+        "no-config",
+        "prettier"
+    ],
+    "main": "index.js",
+    "repository": "git@github.com:soenkekluth/eslint-configs.git",
+    "author": "Sönke Kluth <mail@soenkekluth.com>",
+    "license": "MIT",
+    "peerDependencies": {
+        "eslint": ">=4.18.2",
+        "eslint-config-sk-node": ">=0.4.0"
+    },
+    "dependencies": {
+        "eslint": "^4.18.2",
+        "eslint-config-sk-node": "^0.4.1"
+    },
+    "engines": {
+        "node": ">=9.0.0"
+    },
+    "devEngines": {
+        "node": ">=9.0.0"
+    },
+    "scripts": {
+        "publish:local": "yalc publish",
+        "test": "node test/test.js",
+        "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
+        "lint:fix": "yarn lint --fix"
+    }
 }

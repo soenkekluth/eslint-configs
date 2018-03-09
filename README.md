@@ -50,7 +50,7 @@ Add scripts to `package.json`:
 
 ```json
 "scripts": {
-  "lint": "yarn eslint .",
+  "lint": "eslint 'src/**/*.js' --parser-options=ecmaVersion:7 --format=html --cache --cache-location '~/.eslintcache/'",
   "lint:fix": "yarn lint --fix"
 }
 ```

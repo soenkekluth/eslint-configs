@@ -1,13 +1,13 @@
 module.exports = {
-  extends: ["sk-node"],
+  extends: ['sk-node'],
   globals: {
-    browser: true
+    browser: true,
   },
   env: {
-    browser: true
+    browser: true,
   },
   settings: {
-    targets: ["last 2 versions"],
-    polyfills: ["fetch", "Promise"]
-  }
+    targets: ['last 2 versions'],
+    polyfills: ['fetch', 'Promise'],
+  },
 };

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-flow",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
@@ -13,6 +13,6 @@
     "eslint-config-sk-common": ">=0.4.0"
   },
   "dependencies": {
-    "eslint-config-sk-common": "^0.4.0"
+    "eslint-config-sk-common": "^0.5.0"
   }
 }

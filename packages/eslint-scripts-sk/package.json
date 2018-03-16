@@ -1,16 +1,18 @@
 {
   "name": "eslint-scripts-sk",
-  "version": "0.1.9",
+  "version": "0.5.8",
   "description": "",
   "main": "index.js",
+  "jest-config": "./config/jestrc.json",
   "scripts": {
-    "test": "exit 0"
+    "test": "jest --config './config/jestrc.json' --coverage --verbose"
   },
   "keywords": [],
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "4.18.2"
+    "eslint": "4.18.2",
+    "jest": "^23.0.0-alpha.0"
   },
   "dependencies": {
     "eslint-plugin-sort-class-members": "^1.3.0",

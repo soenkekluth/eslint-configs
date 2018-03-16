@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-browser",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "keywords": [
     "javascript",
@@ -21,11 +21,11 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.18.2",
-    "eslint-config-sk-common": "latest"
+    "eslint-config-sk-common": ">=0.5.7"
   },
   "dependencies": {
     "eslint": "^4.18.2",
-    "eslint-config-sk-common": "^0.5.7"
+    "eslint-config-sk-common": "^0.5.8"
   },
   "engines": {
     "node": ">=9.x"
@@ -33,10 +33,30 @@
   "devEngines": {
     "node": ">=9.x"
   },
+  "jest": {
+    "roots": [
+      "./"
+    ],
+    "testRegex": "test/.*.js$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".history"
+    ],
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/.history/**",
+      "!**/vendor/**"
+    ]
+  },
   "scripts": {
     "publish:local": "yalc publish",
-    "test": "node test/test.js",
+    "test": "jest --coverage --verbose",
     "lint": "yarn eslint .",
     "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "jest": "^23.0.0-alpha.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-flow",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
@@ -19,14 +19,27 @@
     "prettier"
   ],
   "scripts": {
-    "test": "exit 0",
+    "test": "jest --coverage --verbose",
     "publish:local": "yalc publish"
+  },
+  "jest": {
+    "testPathDirs": [
+      "./"
+    ],
+    "testRegex": "test/.*.js$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".history"
+    ]
   },
   "peerDependencies": {
     "eslint": ">=4.18.2",
     "eslint-config-sk-common": "latest"
   },
   "dependencies": {
-    "eslint-config-sk-common": "^0.5.7"
+    "eslint-config-sk-common": "^0.5.8"
+  },
+  "devDependencies": {
+    "jest": "^23.0.0-alpha.0"
   }
 }

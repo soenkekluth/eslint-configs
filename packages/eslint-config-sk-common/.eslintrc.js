@@ -22,6 +22,7 @@ module.exports = {
     global: true,
   },
   env: {
+    commonjs: true,
     es6: true,
     node: true,
     'jest/globals': true,
@@ -30,6 +31,7 @@ module.exports = {
   plugins: ['import', 'compat', 'prettier', 'jest', 'sort-class-members'],
   rules: {
     'compat/compat': 'error',
+    'no-console': 'warn',
     'sort-class-members/sort-class-members': [
       2,
       {

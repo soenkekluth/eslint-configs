@@ -3,23 +3,24 @@
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "dependencies": {
     "lerna": "^2.9.0",
     "yalc": "^1.0.0-pre.17"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "update:links": "yalc update",
+    "link:update": "lerna exec yalc update",
+    "link:publish": "lerna exec yalc publish",
+    "link:modules": "lerna run link:modules && lerna exec yalc link eslint-config-sk-common",
+    "link:start": "run-s link:publish link:modules",
     "format": "prettier './**/*.js' --write",
     "test": "lerna run test",
-    "yalc:link": "yalc link eslint-config-sk-common",
     "prepare": "lerna run prepare"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
+    "npm-run-all": "^4.1.2",
     "prettier": "^1.11.1"
   }
 }

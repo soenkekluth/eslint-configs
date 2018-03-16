@@ -19,18 +19,7 @@
     "prettier"
   ],
   "scripts": {
-    "test": "jest --coverage --verbose",
-    "publish:local": "yalc publish"
-  },
-  "jest": {
-    "testPathDirs": [
-      "./"
-    ],
-    "testRegex": "test/.*.js$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      ".history"
-    ]
+    "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose"
   },
   "peerDependencies": {
     "eslint": ">=4.18.2",

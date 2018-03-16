@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "eslint-config-sk-common": {
-      "signature": "06d8ed1625dbec6a9292a1359ecefbdd",
-      "file": true
-    }
-  }
-}

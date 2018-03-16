@@ -21,7 +21,7 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.18.2",
-    "eslint-config-sk-common": ">=0.5.7"
+    "eslint-config-sk-common": ">=0.5.8"
   },
   "dependencies": {
     "eslint": "^4.18.2",
@@ -33,27 +33,10 @@
   "devEngines": {
     "node": ">=9.x"
   },
-  "jest": {
-    "roots": [
-      "./"
-    ],
-    "testRegex": "test/.*.js$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      ".history"
-    ],
-    "testEnvironment": "node",
-    "collectCoverageFrom": [
-      "**/*.{js,jsx}",
-      "!**/node_modules/**",
-      "!**/.history/**",
-      "!**/vendor/**"
-    ]
-  },
   "scripts": {
-    "publish:local": "yalc publish",
-    "test": "jest --coverage --verbose",
-    "lint": "yarn eslint .",
+    "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
+    "lint":
+      "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {

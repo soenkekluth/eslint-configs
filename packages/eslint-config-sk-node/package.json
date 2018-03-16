@@ -37,20 +37,10 @@
   "devEngines": {
     "node": ">=9.0.0"
   },
-  "jest": {
-    "testPathDirs": [
-      "./"
-    ],
-    "testRegex": "test/.*.js$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      ".history"
-    ]
-  },
   "scripts": {
-    "test": "jest --coverage --verbose",
-    "publish:local": "yalc publish",
-    "lint": "yarn eslint .",
+    "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
+    "lint":
+      "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
     "lint:fix": "yarn lint --fix"
   }
 }

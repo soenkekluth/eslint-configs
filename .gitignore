@@ -5,6 +5,11 @@ package-lock.json
 *~
 *.pyc
 .grunt
+yalc.*
+.yalc
+**/.yalc
+**/*/yalc
+**/*/.yalc
 _SpecRunner.html
 __benchmarks__
 build/
@@ -29,3 +34,6 @@ chrome-user-data
 yarn-error.log
 clean.md
 playground
+.gitignore
+**/.yalc
+packages/eslint-config-sk-flow/.yalc

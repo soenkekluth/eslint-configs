@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['sk-common'],
+  plugins: ['html'],
   globals: {
     browser: true,
   },

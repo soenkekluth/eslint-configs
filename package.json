@@ -6,7 +6,7 @@
   "workspaces": ["packages/*"],
   "dependencies": {
     "lerna": "^2.9.0",
-    "yalc": "^1.0.0-pre.17"
+    "yalc": "^1.0.0-pre.18"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -15,11 +15,10 @@
     "link:modules": "lerna run link:modules && lerna exec yalc link eslint-config-sk-common",
     "link:start": "run-s link:publish link:modules",
     "format": "prettier './**/*.js' --write",
-    "test": "lerna run test",
-    "prepare": "lerna run prepare"
+    "test": "lerna run test"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
+    "eslint": "^4.19.1",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.11.1"
   }

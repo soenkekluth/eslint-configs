@@ -33,7 +33,8 @@ chrome-user-data
 *.map
 yarn-error.log
 clean.md
+yalc.sig
 playground
 .gitignore
-**/.yalc
-packages/eslint-config-sk-flow/.yalc
+**/.yalc/**
+TODO.md

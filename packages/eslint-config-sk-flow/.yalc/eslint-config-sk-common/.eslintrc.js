@@ -1,22 +1,37 @@
-/* eslint-env node */
-
-'use strict';
-
 module.exports = {
-  extends: ['eslint:recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:jest/recommended',
+    'prettier',
+  ],
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 7,
     sourceType: 'module',
+    ecmaFeatures: {
+      modules: true,
+      impliedStrict: true,
+      experimentalObjectRestSpread: true,
+      experimentalDecorators: true,
+      jsx: true,
+    },
   },
   globals: {
     expect: true,
+    global: true,
   },
   env: {
+    commonjs: true,
     es6: true,
+    node: true,
+    'jest/globals': true,
   },
   parser: 'babel-eslint',
-  plugins: ['compat', 'prettier', 'sort-class-members'],
+  plugins: ['import', 'compat', 'prettier', 'jest', 'sort-class-members'],
   rules: {
+    'compat/compat': 'error',
+    'no-console': 'warn',
     'sort-class-members/sort-class-members': [
       2,
       {
@@ -52,5 +67,17 @@ module.exports = {
         useTabs: false,
       },
     ],
+    'class-methods-use-this': 'off',
+    'no-unused-expressions': 'warn',
+    'no-mixed-operators': 'warn',
+    'no-plusplus': 'off',
+    'linebreak-style': ['error', 'unix'],
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.json', '.jsx'],
+        // This adds ./src for relative imports.
+        // moduleDirectory: ['node_modules', 'src'],
+      },
+    },
   },
 };

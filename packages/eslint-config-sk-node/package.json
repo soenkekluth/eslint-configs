@@ -20,12 +20,12 @@
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=4.18.2",
+    "eslint": ">=4.19.1",
     "eslint-config-sk-common": "latest"
   },
   "devDependencies": {
-    "eslint": "4.18.2",
-    "jest": "^23.0.0-alpha.0"
+    "eslint": "4.19.1",
+    "jest": "^22.4.3"
   },
   "dependencies": {
     "eslint-config-sk-common": "^0.6.0",
@@ -39,7 +39,10 @@
   },
   "scripts": {
     "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
-    "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
-    "lint:fix": "yarn lint --fix"
+    "lint":
+      "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
+    "lint:fix": "yarn lint --fix",
+    "publish:local": "yalc publish",
+    "link:local": "yalc link eslint-config-sk-common"
   }
 }

@@ -1,16 +1,23 @@
 # eslint-config-sk-common
 
-[ESLint](http://eslint.org) config using [Prettier](https://github.com/prettier/prettier) and [sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members) for code formatting and unification. [jest](https://www.npmjs.com/package/eslint-plugin-jest) for testing.
 
+production ready es6 [ESLint](http://eslint.org) configs using  [**Prettier**](https://github.com/prettier/prettier) and [**sort-class-members**](https://github.com/bryanrsmith/eslint-plugin-sort-class-members) for code formatting and unification, [**compat**](https://www.npmjs.com/package/eslint-plugin-compat) and [**browserslist**](https://github.com/browserslist/browserslist) to make use of [**caniuse**](http://caniuse.com/) and [**@kangax's compat table**](http://kangax.github.io/compat-table/es6/) for determining coverage and 
+
+[**jest**](https://www.npmjs.com/package/eslint-plugin-jest) for testing.
 
 ## Install
 
 ### [yarn](https://yarnpkg.com)
 
-`yarn add eslint eslint-config-sk-common -D -E`
+```sh
+yarn add eslint eslint-config-sk-common -D -E
+```
 
 ### [npm](https://npmjs.com)
-`npm i -D eslint eslint-config-sk-common`
+
+```sh
+npm i -D eslint eslint-config-sk-common
+```
 
 ## Usage
 

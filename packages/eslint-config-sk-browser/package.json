@@ -21,7 +21,7 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.19.1",
-    "eslint-config-sk-common": ">=0.6.0"
+    "eslint-config-sk-common": ">=0.6.2"
   },
   "dependencies": {
     "eslint": "^4.19.1",

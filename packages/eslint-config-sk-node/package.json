@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-node",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "keywords": [
     "javascript",
@@ -28,7 +28,7 @@
     "jest": "^22.4.3"
   },
   "dependencies": {
-    "eslint-config-sk-common": "^0.6.2",
+    "eslint-config-sk-common": "^0.6.3",
     "eslint-plugin-node": "^6.0.1"
   },
   "engines": {
@@ -39,8 +39,7 @@
   },
   "scripts": {
     "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
-    "lint":
-      "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
+    "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
     "lint:fix": "yarn lint --fix",
     "publish:local": "yalc publish",
     "link:local": "yalc link eslint-config-sk-common"

@@ -2,6 +2,6 @@
 
 'use strict';
 
-const jestrc = require('eslint-scripts-sk/config/jestrc.json');
+const jestrc = require('eslint-scripts-sk/configs/jest.json');
 
 module.exports = jestrc;

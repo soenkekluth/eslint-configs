@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'eslint:recommended',
+    'plugin:promise/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:jest/recommended',
@@ -28,7 +29,7 @@ module.exports = {
     'jest/globals': true,
   },
   parser: 'babel-eslint',
-  plugins: ['import', 'compat', 'prettier', 'jest', 'sort-class-members'],
+  plugins: ['import', 'promise', 'compat', 'prettier', 'jest', 'sort-class-members'],
   rules: {
     'compat/compat': 'error',
     'no-console': 'warn',
@@ -56,7 +57,7 @@ module.exports = {
       'error',
       {
         singleQuote: true,
-        trailingComma: 'all',
+        trailingComma: 'es5',
         arrowParens: 'avoid',
         bracketSpacing: true,
         jsxBracketSameLine: false,
@@ -76,7 +77,7 @@ module.exports = {
       node: {
         extensions: ['.js', '.json', '.jsx'],
         // This adds ./src for relative imports.
-        // moduleDirectory: ['node_modules', 'src'],
+        moduleDirectory: ['node_modules', 'src'],
       },
     },
   },

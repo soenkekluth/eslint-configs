@@ -7,8 +7,6 @@ describe('test eslint config', () => {
   });
 
   it('eslint should pass without errors and no warnings', async () => {
-
     expect(0).toBe(0);
-
   });
 });

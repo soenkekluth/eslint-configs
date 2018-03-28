@@ -1,1 +1,1 @@
-module.exports = 'eslint-scripts-sk'
+module.exports = 'eslint-scripts-sk';

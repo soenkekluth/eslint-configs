@@ -1,7 +1,0 @@
-{
-  "roots": ["./"],
-  "testRegex": "test/.*.js$",
-  "testPathIgnorePatterns": ["/node_modules/", ".history"],
-  "testEnvironment": "node",
-  "collectCoverageFrom": ["**/*.{js,jsx}", "!**/node_modules/**", "!**/.history/**", "!**/vendor/**"]
-}

@@ -3,6 +3,7 @@
   "version": "0.6.3",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
+  "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "license": "MIT",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "keywords": [
@@ -19,7 +20,6 @@
     "prettier"
   ],
   "scripts": {
-    "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
     "publish:local": "yalc publish",
     "link:local": "yalc link eslint-config-sk-common"
   },
@@ -28,9 +28,13 @@
     "eslint-config-sk-common": ">=0.6.2"
   },
   "dependencies": {
-    "eslint-config-sk-common": "^0.6.3"
+    "eslint-config-sk-common": "^0.6.3",
+    "jest-preset-sk": "^1.0.0"
   },
   "devDependencies": {
     "jest": "^22.4.3"
+  },
+  "jest": {
+    "preset": "jest-preset-sk"
   }
 }

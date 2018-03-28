@@ -4,22 +4,46 @@
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
   "workspaces": ["packages/*"],
-  "dependencies": {
-    "lerna": "^2.9.0",
-    "yalc": "^1.0.0-pre.18"
-  },
+  "dependencies": {},
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "link:update": "lerna exec yalc update",
     "link:publish": "lerna exec yalc publish",
     "link:modules": "lerna run link:modules && lerna exec yalc link eslint-config-sk-common",
     "link:start": "run-s link:publish link:modules",
-    "format": "prettier './**/*.js' --write",
-    "test": "lerna run test"
+    "test": "jest --coverage --verbose",
+    "test:update": "jest --verbose --coverage --updateSnapshot",
+    "test:watch": "jest --verbose --watch",
+    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+    "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\"",
+    "bootstrap": "lerna bootstrap",
+    "release": "lerna publish --conventional-commits",
+    "release:major": "lerna publish --force-publish=* --cd-version=major",
+    "release:candidate": "lerna publish --force-publish=* --cd-version=premajor --preid=rc --npm-tag=next",
+    "release:candidate:feature": "lerna publish --cd-version=preminor --preid=rc --npm-tag=next",
+    "release:next": "lerna publish --cd-version=prerelease --preid=rc --npm-tag=next",
+    "update": "yarn upgrade-interactive --latest && rm yarn.lock && yarn",
+    "postupdate": "lerna clean --yes && lerna bootstrap",
+    "reset": "git clean -dfx && yarn && yarn bootstrap",
+    "format": "prettier --write '**/*.{js,json,css}' '**/README.md'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "git add"],
+    "**/README.md": ["prettier --write", "git add"]
+  },
+  "jest": {
+    "preset": "jest-preset-sk",
+    "projects": ["packages/*"]
   },
   "devDependencies": {
     "eslint": "^4.19.1",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "jest-preset-sk": "^1.0.0",
+    "lerna": "^2.9.0",
+    "lint-staged": "^7.0.0",
     "npm-run-all": "^4.1.2",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "yalc": "^1.0.0-pre.18"
   }
 }

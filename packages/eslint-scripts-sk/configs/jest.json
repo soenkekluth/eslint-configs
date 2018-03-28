@@ -1,0 +1,15 @@
+{
+  "testPathIgnorePatterns": ["/node_modules/", ".history", "/coverage/"],
+  "cacheDirectory": "./.cache",
+  "testEnvironment": "node",
+  "coveragePathIgnorePatterns": ["coverage"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  },
+  "collectCoverageFrom": ["**/*.{js,jsx}", "!**/node_modules/**", "!**/.history/**", "!**/vendor/**"]
+}

@@ -21,7 +21,7 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=4.19.1",
-    "eslint-config-sk-common": ">=0.6.2"
+    "eslint-config-sk-common": ">=0.6.3"
   },
   "devDependencies": {
     "eslint": "4.19.1",
@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "eslint-config-sk-common": "^0.6.3",
-    "eslint-plugin-node": "^6.0.1"
+    "eslint-plugin-node": "^6.0.1",
+    "jest-preset-sk": "^1.0.0"
   },
   "engines": {
     "node": ">=9.0.0"
@@ -38,10 +39,13 @@
     "node": ">=9.0.0"
   },
   "scripts": {
-    "test": "jest --config 'node_modules/eslint-config-sk-common/jest.config.js' --rootDir './' --coverage --verbose",
-    "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
+    "lint":
+      "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
     "lint:fix": "yarn lint --fix",
     "publish:local": "yalc publish",
     "link:local": "yalc link eslint-config-sk-common"
+  },
+  "jest": {
+    "preset": "jest-preset-sk"
   }
 }

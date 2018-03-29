@@ -29,7 +29,7 @@
   },
   "peerDependencies": {
     "eslint": ">=4.19.1",
-    "eslint-config-sk-common": ">=0.6.2"
+    "eslint-config-sk-common": ">=1.0.0"
   },
   "dependencies": {
     "eslint-config-sk-common": "1.0.0",

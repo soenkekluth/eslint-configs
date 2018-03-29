@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-flow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",

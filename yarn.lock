@@ -3359,9 +3359,9 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.14.3:
+husky@0.14.3:
   version "0.14.3"
-  resolved "https://registry.npmjs.org/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
   dependencies:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
@@ -4111,9 +4111,9 @@ jest-mock@^22.4.3:
   version "22.4.3"
   resolved "https://registry.npmjs.org/jest-mock/-/jest-mock-22.4.3.tgz#f63ba2f07a1511772cdc7979733397df770aabc7"
 
-jest-preset-sk@^1.0.3:
+jest-preset-sk@1.0.3, jest-preset-sk@^1.0.3:
   version "1.0.3"
-  resolved "https://registry.npmjs.org/jest-preset-sk/-/jest-preset-sk-1.0.3.tgz#c92840187a0885df8c192a2160877dbf42745bc9"
+  resolved "https://registry.yarnpkg.com/jest-preset-sk/-/jest-preset-sk-1.0.3.tgz#c92840187a0885df8c192a2160877dbf42745bc9"
 
 jest-regex-util@^22.4.3:
   version "22.4.3"
@@ -4256,9 +4256,9 @@ jest-worker@^22.4.3:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^22.4.3:
+jest@22.4.3:
   version "22.4.3"
-  resolved "https://registry.npmjs.org/jest/-/jest-22.4.3.tgz#2261f4b117dc46d9a4a1a673d2150958dee92f16"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-22.4.3.tgz#2261f4b117dc46d9a4a1a673d2150958dee92f16"
   dependencies:
     import-local "^1.0.0"
     jest-cli "^22.4.3"
@@ -4491,9 +4491,9 @@ left-pad@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/left-pad/-/left-pad-1.2.0.tgz#d30a73c6b8201d8f7d8e7956ba9616087a68e0ee"
 
-lerna@^2.9.0:
+lerna@2.9.0:
   version "2.9.0"
-  resolved "https://registry.npmjs.org/lerna/-/lerna-2.9.0.tgz#303f70bc50b1c4541bdcf54eda13c36fe54401f3"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.9.0.tgz#303f70bc50b1c4541bdcf54eda13c36fe54401f3"
   dependencies:
     async "^1.5.0"
     chalk "^2.1.0"
@@ -4550,9 +4550,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@^7.0.0:
+lint-staged@7.0.0:
   version "7.0.0"
-  resolved "https://registry.npmjs.org/lint-staged/-/lint-staged-7.0.0.tgz#57926c63201e7bd38ca0576d74391efa699b4a9d"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-7.0.0.tgz#57926c63201e7bd38ca0576d74391efa699b4a9d"
   dependencies:
     app-root-path "^2.0.1"
     chalk "^2.3.1"
@@ -5229,9 +5229,9 @@ npm-path@^2.0.2:
   dependencies:
     which "^1.2.10"
 
-npm-run-all@^4.1.2:
+npm-run-all@4.1.2:
   version "4.1.2"
-  resolved "https://registry.npmjs.org/npm-run-all/-/npm-run-all-4.1.2.tgz#90d62d078792d20669139e718621186656cea056"
+  resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-4.1.2.tgz#90d62d078792d20669139e718621186656cea056"
   dependencies:
     ansi-styles "^3.2.0"
     chalk "^2.1.0"
@@ -5629,9 +5629,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.11.1:
+prettier@1.11.1, prettier@^1.11.1:
   version "1.11.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-1.11.1.tgz#61e43fc4cd44e68f2b0dfc2c38cd4bb0fccdcc75"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.11.1.tgz#61e43fc4cd44e68f2b0dfc2c38cd4bb0fccdcc75"
 
 pretty-bytes@^4.0.2:
   version "4.0.2"
@@ -7189,9 +7189,9 @@ y18n@^3.2.0, y18n@^3.2.1:
   version "3.2.1"
   resolved "https://registry.npmjs.org/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
 
-yalc@^1.0.0-pre.18:
+yalc@1.0.0-pre.19:
   version "1.0.0-pre.19"
-  resolved "https://registry.npmjs.org/yalc/-/yalc-1.0.0-pre.19.tgz#1cb0770a4f477dc93f96d357b521fdda4cd15de1"
+  resolved "https://registry.yarnpkg.com/yalc/-/yalc-1.0.0-pre.19.tgz#1cb0770a4f477dc93f96d357b521fdda4cd15de1"
   dependencies:
     del "^2.2.2"
     fs-extra "^4.0.2"

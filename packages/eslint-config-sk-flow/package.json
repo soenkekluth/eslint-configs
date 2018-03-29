@@ -36,7 +36,7 @@
     "jest-preset-sk": "^1.0.3"
   },
   "devDependencies": {
-    "jest": "^22.4.3"
+    "jest": "22.4.3"
   },
   "jest": {
     "preset": "jest-preset-sk"

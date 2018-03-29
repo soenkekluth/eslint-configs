@@ -3,7 +3,9 @@
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com/)",
   "license": "MIT",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {},
   "scripts": {
     "link:update": "lerna exec yalc update",
@@ -28,18 +30,26 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"],
-    "**/README.md": ["prettier --write", "git add"]
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/README.md": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
     "preset": "jest-preset-sk",
-    "projects": ["packages/*"]
+    "projects": [
+      "packages/*"
+    ]
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
-    "jest-preset-sk": "^1.0.0",
+    "jest-preset-sk": "^1.0.3",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
     "npm-run-all": "^4.1.2",

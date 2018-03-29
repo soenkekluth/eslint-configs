@@ -17,6 +17,10 @@
   ],
   "main": "index.js",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/eslint-configs/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/eslint-configs",
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
   "peerDependencies": {
@@ -30,7 +34,7 @@
   "dependencies": {
     "eslint-config-sk-common": "^0.6.3",
     "eslint-plugin-node": "^6.0.1",
-    "jest-preset-sk": "^1.0.0"
+    "jest-preset-sk": "^1.0.3"
   },
   "engines": {
     "node": ">=9.0.0"

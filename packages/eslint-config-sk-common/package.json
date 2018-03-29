@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/eslint-configs/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/eslint-configs",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "jest-config": "node_modules/eslint-scripts-sk/configs/jest.json",
   "keywords": [
@@ -43,7 +47,7 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-sort-class-members": "^1.3.0",
     "eslint-scripts-sk": "^0.6.2",
-    "jest-preset-sk": "^1.0.0",
+    "jest-preset-sk": "^1.0.3",
     "jscodeshift": "^0.5.0",
     "prettier": "^1.11.1",
     "sort-class-members-codemod": "0.5.1"

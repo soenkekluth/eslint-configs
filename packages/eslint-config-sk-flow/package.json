@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-flow",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
@@ -32,7 +32,7 @@
     "eslint-config-sk-common": ">=1.0.0"
   },
   "dependencies": {
-    "eslint-config-sk-common": "1.0.0",
+    "eslint-config-sk-common": "1.0.2",
     "jest-preset-sk": "^1.0.3"
   },
   "devDependencies": {

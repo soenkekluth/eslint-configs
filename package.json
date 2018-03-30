@@ -20,6 +20,7 @@
     "bootstrap": "lerna bootstrap",
     "release": "lerna publish --conventional-commits",
     "release:major": "lerna publish --force-publish=* --cd-version=major",
+    "release:minor": "lerna publish --force-publish=* --cd-version=minor",
     "release:candidate": "lerna publish --force-publish=* --cd-version=premajor --preid=rc --npm-tag=next",
     "release:candidate:feature": "lerna publish --cd-version=preminor --preid=rc --npm-tag=next",
     "release:next": "lerna publish --cd-version=prerelease --preid=rc --npm-tag=next",
@@ -42,14 +43,14 @@
   "jest": {
     "preset": "jest-preset-sk",
     "projects": [
-      "packages/*"
+      "<rootDir>/packages/*"
     ]
   },
   "devDependencies": {
     "eslint": "4.19.1",
     "husky": "0.14.3",
     "jest": "22.4.3",
-    "jest-preset-sk": "1.0.3",
+    "jest-preset-sk": "1.1.0",
     "lerna": "2.9.1",
     "lint-staged": "7.0.0",
     "npm-run-all": "4.1.2",

@@ -34,7 +34,7 @@
   "dependencies": {
     "eslint-config-sk-common": "1.0.2",
     "eslint-plugin-node": "^6.0.1",
-    "jest-preset-sk": "^1.0.3"
+    "jest-preset-sk": "^1.1.0"
   },
   "engines": {
     "node": ">=9.0.0"
@@ -43,6 +43,7 @@
     "node": ">=9.0.0"
   },
   "scripts": {
+    "test:local": "jest --verbose",
     "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
     "lint:fix": "yarn lint --fix",
     "publish:local": "yalc publish",

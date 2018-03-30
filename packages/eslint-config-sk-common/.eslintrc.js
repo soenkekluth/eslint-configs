@@ -8,12 +8,12 @@ module.exports = {
     'prettier',
   ],
   parserOptions: {
-    ecmaVersion: 7,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
       impliedStrict: true,
-      experimentalObjectRestSpread: true,
+      // experimentalObjectRestSpread: true,
       experimentalDecorators: true,
       jsx: true,
     },
@@ -26,6 +26,8 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    'shared-node-browser': true,
+    serviceworker: true,
     'jest/globals': true,
   },
   parser: 'babel-eslint',
@@ -33,6 +35,16 @@ module.exports = {
   rules: {
     'compat/compat': 'error',
     'no-console': 'warn',
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
+      },
+    ],
     'sort-class-members/sort-class-members': [
       2,
       {

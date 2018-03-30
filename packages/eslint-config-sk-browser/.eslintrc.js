@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['sk-common'],
+  extends: ['eslint-config-sk-common'],
   plugins: ['html'],
   globals: {
     browser: true,

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['sk-node'],
+  extends: ['eslint-config-sk-node'],
   globals: {
     browser: true,
   },

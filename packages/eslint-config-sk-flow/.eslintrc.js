@@ -1,5 +1,12 @@
 module.exports = {
-  extends: ['sk-common'],
+  extends: [
+    'eslint-config-sk-common',
+    'plugin:flowtype/recommended',
+    'plugin:react/recommended',
+    'prettier/flowtype',
+    'prettier/react',
+  ],
+  plugins: ['html', 'flowtype', 'react'],
   globals: {
     browser: true,
   },

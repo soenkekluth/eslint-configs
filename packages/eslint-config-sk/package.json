@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "keywords": [
     "javascript",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-sk-node": "1.0.2",
+    "eslint-config-sk-node": "1.0.3",
     "jest-preset-sk": "^1.0.3"
   },
   "engines": {

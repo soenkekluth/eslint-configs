@@ -46,7 +46,7 @@ describe('test eslint config', () => {
       expect(output.results[index].filePath.endsWith(file)).toBeTruthy();
     });
 
-    expect(output.errorCount).toBe(2);
+    expect(output.errorCount).toBe(1);
     expect(output.warningCount).toBe(0);
   });
 

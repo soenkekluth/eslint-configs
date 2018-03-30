@@ -34,10 +34,10 @@
     "jest-preset-sk": "^1.1.0"
   },
   "engines": {
-    "node": ">=9.x"
+    "node": ">=9.0.0"
   },
   "devEngines": {
-    "node": ">=9.x"
+    "node": ">=9.0.0"
   },
   "scripts": {
     "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",

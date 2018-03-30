@@ -3,11 +3,11 @@ module.exports = {
     'eslint-config-sk-common',
     'plugin:flowtype/recommended',
     'plugin:react/recommended',
-    'plugin:node/recommended',
+    // 'plugin:node/recommended',
     'prettier/flowtype',
     'prettier/react',
   ],
-  plugins: ['html', 'flowtype', 'node', 'react'],
+  plugins: ['html', 'flowtype', 'react'],
   globals: {
     browser: true,
   },

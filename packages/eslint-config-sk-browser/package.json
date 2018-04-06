@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-browser",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "production ready eslint config using es6 prettier jest codemod browserlist flow ...",
   "keywords": [
     "javascript",

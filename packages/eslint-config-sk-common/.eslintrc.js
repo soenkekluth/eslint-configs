@@ -23,15 +23,17 @@ module.exports = {
     global: true,
   },
   env: {
-    commonjs: true,
-    es6: true,
+    // commonjs: true,
+    // es6: true,
+    browser: true,
     node: true,
     'shared-node-browser': true,
     serviceworker: true,
+    worker: true,
     'jest/globals': true,
   },
   parser: 'babel-eslint',
-  plugins: ['import', 'promise', 'compat', 'prettier', 'jest', 'sort-class-members'],
+  plugins: ['import', 'promise', 'compat', 'prettier', 'json', 'jest', 'sort-class-members'],
   rules: {
     'compat/compat': 'error',
     'no-console': 'warn',
@@ -85,12 +87,6 @@ module.exports = {
     'no-mixed-operators': 'warn',
     'no-plusplus': 'off',
     'linebreak-style': ['error', 'unix'],
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.json', '.jsx'],
-        // This adds ./src for relative imports.
-        moduleDirectory: ['node_modules', 'src'],
-      },
-    },
+    'import/resolver': 'node',
   },
 };

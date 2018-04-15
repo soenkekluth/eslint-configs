@@ -56,9 +56,12 @@ module.exports = {
           '[properties]',
           '[conventional-private-properties]',
           'constructor',
-          '[methods]',
           '[conventional-private-methods]',
+          '[methods]',
           '[event-handlers]',
+          '[getters]',
+          '[setters]',
+          '[everything-else]',
         ],
         groups: {
           'event-handlers': [{ name: '/on.+/', type: 'method' }],

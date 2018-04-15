@@ -19,6 +19,7 @@
     "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\"",
     "bootstrap": "lerna bootstrap",
     "release": "lerna publish --conventional-commits",
+    "release:dry": "lerna publish --conventional-commits --skip-git --skip-npm",
     "release:major": "lerna publish --force-publish=* --cd-version=major",
     "release:minor": "lerna publish --force-publish=* --cd-version=minor",
     "release:candidate": "lerna publish --force-publish=* --cd-version=premajor --preid=rc --npm-tag=next",
@@ -28,7 +29,7 @@
     "postupdate": "lerna clean --yes && lerna bootstrap",
     "reset": "git clean -dfx && yarn && yarn bootstrap",
     "format": "prettier --write '**/*.{js,json,css}' '**/README.md'",
-    "precommit": "lint-staged"
+    "--precommit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,json,css}": [
@@ -51,10 +52,10 @@
     "husky": "0.14.3",
     "jest": "22.4.3",
     "jest-preset-sk": "1.1.0",
-    "lerna": "2.10.0",
+    "lerna": "2.10.1",
     "lint-staged": "7.0.4",
     "npm-run-all": "4.1.2",
-    "prettier": "1.11.1",
-    "yalc": "1.0.0-pre.19"
+    "prettier": "1.12.0",
+    "yalc": "1.0.0-pre.21"
   }
 }

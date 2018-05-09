@@ -36,7 +36,7 @@
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-config-sk-common": "^0.6.0",
+    "eslint-config-sk-common": "^1.0.0",
     "eslint-plugin-compat": "^2.2.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jest": "^21.15.0",

@@ -20,11 +20,11 @@
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=4.19.1",
+    "eslint": ">=5.0.1",
     "eslint-config-sk-node": ">=1.1.5"
   },
   "dependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.1",
     "eslint-config-sk-node": "1.1.5",
     "jest-preset-sk": "^1.1.0"
   },
@@ -36,12 +36,10 @@
   },
   "scripts": {
     "lint": "eslint './**/*.js' --parser-options=ecmaVersion:7 --format=html -o 'lint-result.html' --cache --cache-location '/tmp/.eslintcache/'",
-    "lint:fix": "yarn lint --fix",
-    "publish:local": "yalc publish",
-    "link:local": "yalc link eslint-config-sk-common"
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "jest": "22.4.3"
+    "jest": "23.3.0"
   },
   "jest": {
     "preset": "jest-preset-sk",

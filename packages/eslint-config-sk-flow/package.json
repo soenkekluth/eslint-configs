@@ -24,11 +24,9 @@
     "prettier"
   ],
   "scripts": {
-    "publish:local": "yalc publish",
-    "link:local": "yalc link eslint-config-sk-common"
   },
   "peerDependencies": {
-    "eslint": ">=4.19.1",
+    "eslint": ">=5.0.1",
     "eslint-config-sk-common": ">=1.1.5"
   },
   "engines": {
@@ -38,20 +36,20 @@
     "node": ">=9.0.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.5",
     "eslint-config-sk-common": "1.1.5",
-    "eslint-plugin-babel": "^5.0.0",
-    "eslint-plugin-flowtype": "^2.46.2",
-    "eslint-plugin-flowtype-errors": "^3.5.1",
-    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-private-props": "^0.3.0",
-    "eslint-plugin-react": "^7.7.0",
-    "flow-bin": "^0.69.0",
+    "eslint-plugin-react": "^7.10.0",
+    "flow-bin": "^0.75.0",
     "flow-typed": "^2.4.0",
     "jest-preset-sk": "^1.1.0"
   },
   "devDependencies": {
-    "jest": "22.4.3"
+    "jest": "23.3.0"
   },
   "jest": {
     "preset": "jest-preset-sk"

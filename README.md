@@ -8,25 +8,25 @@ production ready es6 [ESLint](http://eslint.org) configs using [**Prettier**](ht
 
 ## Packages
 
-* [eslint-config-sk-browser](https://www.npmjs.com/package/eslint-config-sk-browser)
-* [eslint-config-sk-node](https://www.npmjs.com/package/eslint-config-sk-node)
-* [eslint-config-sk-flow](https://www.npmjs.com/package/eslint-config-sk-flow)
-* [eslint-config-sk](https://www.npmjs.com/package/eslint-config-sk)
-* [eslint-scripts-sk ](https://www.npmjs.com/package/eslint-scripts-sk)
-* [eslint-config-sk-common ](https://www.npmjs.com/package/eslint-config-sk-common)
+- [eslint-config-sk-browser](https://www.npmjs.com/package/eslint-config-sk-browser)
+- [eslint-config-sk-node](https://www.npmjs.com/package/eslint-config-sk-node)
+- [eslint-config-sk-flow](https://www.npmjs.com/package/eslint-config-sk-flow)
+- [eslint-config-sk](https://www.npmjs.com/package/eslint-config-sk)
+- [eslint-scripts-sk ](https://www.npmjs.com/package/eslint-scripts-sk)
+- [eslint-config-sk-common ](https://www.npmjs.com/package/eslint-config-sk-common)
 
 ### Plugins / Modules
 
-* babel-eslint
-* eslint-config-prettier
-* eslint-plugin-node
-* eslint-plugin-compat
-* eslint-plugin-import
-* eslint-plugin-jest
-* eslint-plugin-prettier
-* eslint-plugin-sort-class-members
-* eslint-scripts-sk
-* jscodeshift
-* prettier
-* sort-class-members-codemod
-* eslint-plugin-html
+- babel-eslint
+- eslint-config-prettier
+- eslint-plugin-node
+- eslint-plugin-compat
+- eslint-plugin-import
+- eslint-plugin-jest
+- eslint-plugin-prettier
+- eslint-plugin-sort-class-members
+- eslint-scripts-sk
+- jscodeshift
+- prettier
+- sort-class-members-codemod
+- eslint-plugin-html

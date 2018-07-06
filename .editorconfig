@@ -8,31 +8,12 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{php,blade.php}]
-indent_style = space
-indent_size = 4
-
-[{eslintrc,package,composer,jsconfig}.json]
-indent_style = space
-indent_size = 2
-
-[*.{babelrc,eslintrc.json,eslintrc,yml,rc}]
-indent_style = space
-indent_size = 2
-
-[*.md]
+[*.{md,html}]
 max_line_length = off
 insert_final_newline = false
 trim_trailing_whitespace = false
 
-[**.min.css]
+[*.min.*]
 indent_style = ignore
 insert_final_newline = ignore
-
-[**.min.js]
-indent_style = ignore
-insert_final_newline = ignore
-
-[{**/public/**, ]}
-indent_style = ignore
-insert_final_newline = ignore
+trim_trailing_whitespace = false

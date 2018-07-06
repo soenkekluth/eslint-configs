@@ -14,7 +14,7 @@
     "test:watch": "jest --verbose --watch",
     "test:coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
     "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\"",
-    "release": "yarn publish",
+    "release": "workspace-version",
     "format": "prettier --write '**/*.{js,json,css}' '**/README.md'",
     "--precommit": "lint-staged"
   },

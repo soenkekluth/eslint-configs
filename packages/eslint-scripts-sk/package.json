@@ -1,12 +1,10 @@
 {
   "name": "eslint-scripts-sk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "jest-config": "./config/jest.json",
-  "scripts": {
-
-  },
+  "scripts": {},
   "keywords": [],
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
   "bugs": {

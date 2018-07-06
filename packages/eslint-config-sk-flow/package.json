@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk-flow",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "main": "index.js",
   "author": "<mail@soenkekluth.com> (https://soenkekluth.com/)",
   "repository": "git@github.com:soenkekluth/eslint-configs.git",
@@ -23,8 +23,7 @@
     "no-config",
     "prettier"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": ">=5.0.1",
     "eslint-config-sk-common": ">=1.1.5"

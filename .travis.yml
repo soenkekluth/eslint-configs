@@ -1,3 +1,14 @@
 language: node_js
 node_js:
-    - '9'
+- '9'
+
+cache:
+  yarn: true
+
+# publish on tag
+script:
+  - if [ -n "$TRAVIS_TAG" ]; then node node_modules/.bin/workspace-publish; fi
+
+env:
+  global:
+    secure: osurtjQ70Vpx7Vq0UEee25Bc8VetYK6GWA+fNv2c1/c8tx0MEzRUPU8jNZcrQQZgTvx+wdNRC2Fy2lgsW7wQbZiQQHDprtnwQMYsVF1Hp/Pk4LDZgQM9Z68aq2Z0iz+66nnC0E6ij2hCwC2vXPySXTUcezeKlmH18eMmULU7k0AxvI76F3FY4aiE3wsjjpY4e2RyoucZcyD25rR+vfEyp0mIO5MQW4zHtcjIOdY2jmrZRHfr1nn71VUdoGvPA7qMPuCSeyWkLlLzuNEv4Q8gnN+9Q3tll2bWVPOmilorxqizOe1LBv1BVKxaVjoroflIAzu8uN97piPkHZdDBi7hcpPnS/L8Mx8ngzksrMWiWKA+bN38o0KUyYkjVX329qJztg8PaNZIWSmN6cOii6JmkzM5EDA32Fr0I6hY+buJRbGDjeMB1lXpTxH+GSK1/ZAf7HNSvhNlaU/bErAl11fSvpMEZSyjVAl0DyS7qZBGn3v1pUbu+RLaOY0oLvb2D+aVp4VwUWT3Zm0yEw/ct0dSflm1j8KepJLKuXcdrxF1yZxdGaOgIaKanapVoc2Zl6uAEUEvpg9wSYLDRP+bv6VwIdaXNZgvfZJe1G/R8gXnrREvEJLurcTtz1Vpqc4KkI8GXYUqlAzX9gFnTYzYZ4Hc4O/38XA41ApFQta1EVx1PM0=

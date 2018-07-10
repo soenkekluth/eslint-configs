@@ -161,6 +161,10 @@ ajv-keywords@^1.0.0:
   version "1.5.1"
   resolved "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-1.5.1.tgz#314dd0a4b3368fad3dfcdc54ede6171b886daf3c"
 
+ajv-keywords@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
+
 ajv-keywords@^3.0.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.2.0.tgz#e86b819c602cf8821ad637413698f1dec021847a"
@@ -172,7 +176,7 @@ ajv@^4.7.0:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-ajv@^5.1.0:
+ajv@^5.1.0, ajv@^5.2.3, ajv@^5.3.0:
   version "5.5.2"
   resolved "https://registry.npmjs.org/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
   dependencies:
@@ -442,7 +446,7 @@ aws4@^1.6.0:
   version "1.7.0"
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.7.0.tgz#d4d0e9b9dbfca77bf08eeb0a8a471550fe39e289"
 
-babel-code-frame@^6.16.0, babel-code-frame@^6.26.0:
+babel-code-frame@^6.16.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
   resolved "https://registry.npmjs.org/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
   dependencies:
@@ -535,7 +539,7 @@ babel-eslint@^6.0.5:
     lodash.assign "^4.0.0"
     lodash.pickby "^4.0.0"
 
-babel-eslint@^8.2.5:
+babel-eslint@^8.2.3, babel-eslint@^8.2.5:
   version "8.2.5"
   resolved "https://registry.npmjs.org/babel-eslint/-/babel-eslint-8.2.5.tgz#dc2331c259d36782aa189da510c43dedd5adc7a3"
   dependencies:
@@ -1367,6 +1371,14 @@ browserslist@^3.2.8:
     caniuse-lite "^1.0.30000844"
     electron-to-chromium "^1.3.47"
 
+browserslist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.0.0.tgz#48703f1ed7ef981c6719e39e9444f20632b06571"
+  dependencies:
+    caniuse-lite "^1.0.30000859"
+    electron-to-chromium "^1.3.50"
+    node-releases "^1.0.0-alpha.10"
+
 bser@1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/bser/-/bser-1.0.2.tgz#381116970b2a6deea5646dd15dd7278444b56169"
@@ -1451,9 +1463,17 @@ caniuse-db@^1.0.30000846:
   version "1.0.30000864"
   resolved "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000864.tgz#35a4b2325a8d4553a46b516dbc233bf391d75555"
 
+caniuse-db@^1.0.30000865:
+  version "1.0.30000865"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000865.tgz#82ffb64d40f7567620aac02d3a632079689abc6b"
+
 caniuse-lite@^1.0.30000844:
   version "1.0.30000864"
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000864.tgz#7a08c78da670f23c06f11aa918831b8f2dd60ddc"
+
+caniuse-lite@^1.0.30000859:
+  version "1.0.30000865"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000865.tgz#70026616e8afe6e1442f8bb4e1092987d81a2f25"
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -1717,7 +1737,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6, concat-stream@^1.5.2:
+concat-stream@^1.4.6, concat-stream@^1.5.2, concat-stream@^1.6.0:
   version "1.6.2"
   resolved "https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
   dependencies:
@@ -1789,7 +1809,7 @@ cross-spawn@^3.0.1:
     lru-cache "^4.0.1"
     which "^1.2.9"
 
-cross-spawn@^5.0.1:
+cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -2096,7 +2116,7 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-electron-to-chromium@^1.3.47:
+electron-to-chromium@^1.3.47, electron-to-chromium@^1.3.50:
   version "1.3.51"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.51.tgz#6a42b49daaf7f22a5b37b991daf949f34dbdb9b5"
 
@@ -2236,6 +2256,35 @@ eslint-config-prettier@^2.9.0:
   dependencies:
     get-stdin "^5.0.1"
 
+eslint-config-sk-common@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-sk-common/-/eslint-config-sk-common-1.1.5.tgz#6a246f7f1acb2df296577d701940012594dd309b"
+  dependencies:
+    babel-eslint "^8.2.3"
+    eslint "^4.19.1"
+    eslint-config-prettier "^2.9.0"
+    eslint-import-resolver-node "^0.3.2"
+    eslint-plugin-compat "^2.2.0"
+    eslint-plugin-import "^2.11.0"
+    eslint-plugin-jest "^21.15.0"
+    eslint-plugin-json "^1.2.0"
+    eslint-plugin-prettier "^2.6.0"
+    eslint-plugin-promise "^3.7.0"
+    eslint-plugin-sort-class-members "^1.3.0"
+    eslint-scripts-sk "1.1.0"
+    jest-preset-sk "^1.1.0"
+    jscodeshift "^0.5.0"
+    prettier "^1.12.0"
+    sort-class-members-codemod "0.5.1"
+
+eslint-config-sk-node@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-sk-node/-/eslint-config-sk-node-1.1.5.tgz#b03011b5c33f6063c927f820194d867ffc5806bb"
+  dependencies:
+    eslint-config-sk-common "1.1.5"
+    eslint-plugin-node "^6.0.1"
+    jest-preset-sk "^1.1.0"
+
 eslint-import-resolver-node@^0.3.1, eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
   resolved "https://registry.npmjs.org/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -2255,6 +2304,16 @@ eslint-plugin-babel@^5.1.0:
   resolved "https://registry.npmjs.org/eslint-plugin-babel/-/eslint-plugin-babel-5.1.0.tgz#9c76e476162041e50b6ba69aa4eae3bdd6a4e1c3"
   dependencies:
     eslint-rule-composer "^0.3.0"
+
+eslint-plugin-compat@^2.2.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-compat/-/eslint-plugin-compat-2.5.0.tgz#a35dd1249527eaf2170b5a063f33d4db1a1fc664"
+  dependencies:
+    babel-runtime "^6.26.0"
+    browserslist "^4.0.0"
+    caniuse-db "^1.0.30000865"
+    mdn-browser-compat-data "^0.0.40"
+    requireindex "^1.2.0"
 
 eslint-plugin-compat@^2.4.0:
   version "2.4.0"
@@ -2285,7 +2344,7 @@ eslint-plugin-html@^4.0.5:
   dependencies:
     htmlparser2 "^3.8.2"
 
-eslint-plugin-import@^2.13.0:
+eslint-plugin-import@^2.11.0, eslint-plugin-import@^2.13.0:
   version "2.13.0"
   resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.13.0.tgz#df24f241175e312d91662dc91ca84064caec14ed"
   dependencies:
@@ -2300,7 +2359,7 @@ eslint-plugin-import@^2.13.0:
     read-pkg-up "^2.0.0"
     resolve "^1.6.0"
 
-eslint-plugin-jest@^21.17.0:
+eslint-plugin-jest@^21.15.0, eslint-plugin-jest@^21.17.0:
   version "21.17.0"
   resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-21.17.0.tgz#fdb00e2f9ff16987d6ebcf2c75c7add105760bbb"
 
@@ -2319,7 +2378,7 @@ eslint-plugin-node@^6.0.1:
     resolve "^1.3.3"
     semver "^5.4.1"
 
-eslint-plugin-prettier@^2.6.2:
+eslint-plugin-prettier@^2.6.0, eslint-plugin-prettier@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-2.6.2.tgz#71998c60aedfa2141f7bfcbf9d1c459bf98b4fad"
   dependencies:
@@ -2333,7 +2392,7 @@ eslint-plugin-private-props@^0.3.0:
     lodash "^4.0.0"
     requireindex "~1.1.0"
 
-eslint-plugin-promise@^3.8.0:
+eslint-plugin-promise@^3.7.0, eslint-plugin-promise@^3.8.0:
   version "3.8.0"
   resolved "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
 
@@ -2346,13 +2405,20 @@ eslint-plugin-react@^7.10.0:
     jsx-ast-utils "^2.0.1"
     prop-types "^15.6.2"
 
-eslint-plugin-sort-class-members@^1.3.1:
+eslint-plugin-sort-class-members@^1.3.0, eslint-plugin-sort-class-members@^1.3.1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/eslint-plugin-sort-class-members/-/eslint-plugin-sort-class-members-1.3.1.tgz#36a1790855cbd971d9f49701b4aadc2e1ccb83c6"
 
 eslint-rule-composer@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
+
+eslint-scope@^3.7.1, eslint-scope@~3.7.1:
+  version "3.7.1"
+  resolved "https://registry.npmjs.org/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
+  dependencies:
+    esrecurse "^4.1.0"
+    estraverse "^4.1.1"
 
 eslint-scope@^4.0.0:
   version "4.0.0"
@@ -2361,12 +2427,13 @@ eslint-scope@^4.0.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-scope@~3.7.1:
-  version "3.7.1"
-  resolved "https://registry.npmjs.org/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
+eslint-scripts-sk@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-scripts-sk/-/eslint-scripts-sk-1.1.0.tgz#ce6fc9fa11a5dc2aae77c6bce6f188530d776362"
   dependencies:
-    esrecurse "^4.1.0"
-    estraverse "^4.1.1"
+    eslint-plugin-sort-class-members "^1.3.0"
+    jest-preset-sk "^1.1.0"
+    sort-class-members-codemod "^0.5.1"
 
 eslint-visitor-keys@^1.0.0:
   version "1.0.0"
@@ -2493,7 +2560,50 @@ eslint@^3.17.1:
     text-table "~0.2.0"
     user-home "^2.0.0"
 
-espree@^3.1.6, espree@^3.4.0:
+eslint@^4.19.1:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.19.1.tgz#32d1d653e1d90408854bfb296f076ec7e186a300"
+  dependencies:
+    ajv "^5.3.0"
+    babel-code-frame "^6.22.0"
+    chalk "^2.1.0"
+    concat-stream "^1.6.0"
+    cross-spawn "^5.1.0"
+    debug "^3.1.0"
+    doctrine "^2.1.0"
+    eslint-scope "^3.7.1"
+    eslint-visitor-keys "^1.0.0"
+    espree "^3.5.4"
+    esquery "^1.0.0"
+    esutils "^2.0.2"
+    file-entry-cache "^2.0.0"
+    functional-red-black-tree "^1.0.1"
+    glob "^7.1.2"
+    globals "^11.0.1"
+    ignore "^3.3.3"
+    imurmurhash "^0.1.4"
+    inquirer "^3.0.6"
+    is-resolvable "^1.0.0"
+    js-yaml "^3.9.1"
+    json-stable-stringify-without-jsonify "^1.0.1"
+    levn "^0.3.0"
+    lodash "^4.17.4"
+    minimatch "^3.0.2"
+    mkdirp "^0.5.1"
+    natural-compare "^1.4.0"
+    optionator "^0.8.2"
+    path-is-inside "^1.0.2"
+    pluralize "^7.0.0"
+    progress "^2.0.0"
+    regexpp "^1.0.1"
+    require-uncached "^1.0.3"
+    semver "^5.3.0"
+    strip-ansi "^4.0.0"
+    strip-json-comments "~2.0.1"
+    table "4.0.2"
+    text-table "~0.2.0"
+
+espree@^3.1.6, espree@^3.4.0, espree@^3.5.4:
   version "3.5.4"
   resolved "https://registry.npmjs.org/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
   dependencies:
@@ -2672,7 +2782,7 @@ extend@3.0.1, extend@~3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
-external-editor@^2.1.0:
+external-editor@^2.0.4, external-editor@^2.1.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/external-editor/-/external-editor-2.2.0.tgz#045511cfd8d133f3846673d1047c154e214ad3d5"
   dependencies:
@@ -3094,7 +3204,7 @@ glob@^5.0.15:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^11.1.0, globals@^11.5.0:
+globals@^11.0.1, globals@^11.1.0, globals@^11.5.0:
   version "11.7.0"
   resolved "https://registry.npmjs.org/globals/-/globals-11.7.0.tgz#a583faa43055b1aca771914bf68258e2fc125673"
 
@@ -3418,6 +3528,25 @@ inquirer@^0.12.0:
     rx-lite "^3.1.2"
     string-width "^1.0.1"
     strip-ansi "^3.0.0"
+    through "^2.3.6"
+
+inquirer@^3.0.6:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-3.3.0.tgz#9dd2f2ad765dcab1ff0443b491442a20ba227dc9"
+  dependencies:
+    ansi-escapes "^3.0.0"
+    chalk "^2.0.0"
+    cli-cursor "^2.1.0"
+    cli-width "^2.0.0"
+    external-editor "^2.0.4"
+    figures "^2.0.0"
+    lodash "^4.3.0"
+    mute-stream "0.0.7"
+    run-async "^2.2.0"
+    rx-lite "^4.0.8"
+    rx-lite-aggregates "^4.0.8"
+    string-width "^2.1.0"
+    strip-ansi "^4.0.0"
     through "^2.3.6"
 
 inquirer@^5.0.1, inquirer@^5.2.0:
@@ -4271,7 +4400,7 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-js-yaml@3.x, js-yaml@^3.11.0, js-yaml@^3.5.1, js-yaml@^3.7.0, js-yaml@^3.9.0:
+js-yaml@3.x, js-yaml@^3.11.0, js-yaml@^3.5.1, js-yaml@^3.7.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.12.0"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   dependencies:
@@ -4303,7 +4432,7 @@ jscodeshift@^0.3.25:
     temp "^0.8.1"
     write-file-atomic "^1.2.0"
 
-jscodeshift@^0.5.1:
+jscodeshift@^0.5.0, jscodeshift@^0.5.1:
   version "0.5.1"
   resolved "https://registry.npmjs.org/jscodeshift/-/jscodeshift-0.5.1.tgz#4af6a721648be8638ae1464a190342da52960c33"
   dependencies:
@@ -4905,6 +5034,12 @@ mdn-browser-compat-data@^0.0.36:
   dependencies:
     extend "3.0.1"
 
+mdn-browser-compat-data@^0.0.40:
+  version "0.0.40"
+  resolved "https://registry.yarnpkg.com/mdn-browser-compat-data/-/mdn-browser-compat-data-0.0.40.tgz#d7f13de64ff90e11062cfc0db92753674feb9800"
+  dependencies:
+    extend "3.0.1"
+
 mem@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
@@ -5162,6 +5297,12 @@ node-pre-gyp@^0.10.0:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
+
+node-releases@^1.0.0-alpha.10:
+  version "1.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.0.0-alpha.10.tgz#61c8d5f9b5b2e05d84eba941d05b6f5202f68a2a"
+  dependencies:
+    semver "^5.3.0"
 
 nomnom@^1.8.1:
   version "1.8.1"
@@ -5643,7 +5784,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@1.13.7, prettier@^1.13.7:
+prettier@1.13.7, prettier@^1.12.0, prettier@^1.13.7:
   version "1.13.7"
   resolved "https://registry.npmjs.org/prettier/-/prettier-1.13.7.tgz#850f3b8af784a49a6ea2d2eaa7ed1428a34b7281"
 
@@ -5974,7 +6115,7 @@ regexp.prototype.flags@^1.2.0:
   dependencies:
     define-properties "^1.1.2"
 
-regexpp@^1.1.0:
+regexpp@^1.0.1, regexpp@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/regexpp/-/regexpp-1.1.0.tgz#0e3516dd0b7904f413d2d4193dce4618c3a689ab"
 
@@ -6189,6 +6330,16 @@ run-async@^2.2.0:
   resolved "https://registry.npmjs.org/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
   dependencies:
     is-promise "^2.1.0"
+
+rx-lite-aggregates@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz#753b87a89a11c95467c4ac1626c4efc4e05c67be"
+  dependencies:
+    rx-lite "*"
+
+rx-lite@*, rx-lite@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
 
 rx-lite@^3.1.2:
   version "3.1.2"
@@ -6698,6 +6849,17 @@ symbol-tree@^3.2.1, symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
+table@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/table/-/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
+  dependencies:
+    ajv "^5.2.3"
+    ajv-keywords "^2.1.0"
+    chalk "^2.1.0"
+    lodash "^4.17.4"
+    slice-ansi "1.0.0"
+    string-width "^2.1.1"
+
 table@^3.7.8:
   version "3.8.3"
   resolved "https://registry.npmjs.org/table/-/table-3.8.3.tgz#2bbc542f0fda9861a755d3947fefd8b3f513855f"
@@ -7128,9 +7290,9 @@ worker-farm@^1.3.1:
   dependencies:
     errno "~0.1.7"
 
-workspace-release@^0.4.3:
+workspace-release@0.4.3:
   version "0.4.3"
-  resolved "https://registry.npmjs.org/workspace-release/-/workspace-release-0.4.3.tgz#e146800950ad05ad535da50a0f9d47265704e8a0"
+  resolved "https://registry.yarnpkg.com/workspace-release/-/workspace-release-0.4.3.tgz#e146800950ad05ad535da50a0f9d47265704e8a0"
   dependencies:
     chalk "^2.3.0"
     fast-glob "^2.0.1"

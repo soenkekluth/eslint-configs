@@ -33,7 +33,7 @@
     "prettier": ">=1.11.1"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^10.0.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-sk-common": "^0.6.0",

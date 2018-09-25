@@ -35,7 +35,7 @@
     "node": ">=9.0.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^10.0.0",
     "eslint-config-sk-common": "1.1.5",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-flowtype": "^2.49.3",

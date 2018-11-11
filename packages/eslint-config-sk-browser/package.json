@@ -30,7 +30,7 @@
   "dependencies": {
     "eslint": "^5.0.1",
     "eslint-config-sk-common": "1.1.5",
-    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-html": "^5.0.0",
     "jest-preset-sk": "^1.1.0"
   },
   "engines": {

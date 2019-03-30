@@ -28,7 +28,7 @@
     "eslint-config-sk-common": ">=1.1.5"
   },
   "devDependencies": {
-    "eslint": "5.0.1",
+    "eslint": "5.16.0",
     "jest": "23.3.0"
   },
   "dependencies": {

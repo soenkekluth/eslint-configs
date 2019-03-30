@@ -14,7 +14,7 @@
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "5.0.1",
+    "eslint": "5.16.0",
     "jest": "23.3.0"
   },
   "dependencies": {

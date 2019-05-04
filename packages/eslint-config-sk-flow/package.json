@@ -39,7 +39,7 @@
     "eslint-config-sk-common": "1.1.5",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-flowtype": "^2.49.3",
-    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-flowtype-errors": "^4.0.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-private-props": "^0.3.0",
     "eslint-plugin-react": "^7.10.0",

@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "eslint": "5.0.1",
-    "jest": "23.3.0"
+    "jest": "23.6.0"
   },
   "dependencies": {
     "eslint-config-sk-common": "1.1.5",

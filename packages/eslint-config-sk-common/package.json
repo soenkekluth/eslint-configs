@@ -50,7 +50,7 @@
     "eslint-plugin-sort-class-members": "^1.3.1",
     "eslint-scripts-sk": "1.1.0",
     "jest-preset-sk": "^1.1.0",
-    "jscodeshift": "^0.5.1",
+    "jscodeshift": "^0.15.0",
     "prettier": "^1.13.7",
     "sort-class-members-codemod": "0.5.1"
   },

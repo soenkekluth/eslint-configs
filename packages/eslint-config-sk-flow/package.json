@@ -43,7 +43,7 @@
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-private-props": "^0.3.0",
     "eslint-plugin-react": "^7.10.0",
-    "flow-bin": "^0.75.0",
+    "flow-bin": "^0.232.0",
     "flow-typed": "^2.4.0",
     "jest-preset-sk": "^1.1.0"
   },

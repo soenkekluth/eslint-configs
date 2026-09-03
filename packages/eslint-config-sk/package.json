@@ -39,7 +39,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "jest": "23.3.0"
+    "jest": "30.5.1"
   },
   "jest": {
     "preset": "jest-preset-sk",
